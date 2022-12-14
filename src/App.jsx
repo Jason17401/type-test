@@ -6,20 +6,20 @@ import TypingTest from './TypingTest';
 import About from './About';
 import Settings from './Settings';
 import Help from './Help';
+import Login from './Login';
 
 function App() {
     return (
         <Router>
-            <header>
-                <Navbar />
-                <Routes>
-                    <Route exact path="/" element={ <Home /> } />
-                    <Route path="/typing-test" element={ <TypingTest /> } />
-                    <Route path="/about" element={ <About /> } />
-                    <Route path="/settings" element={ <Settings /> } />
-                    <Route path="/help" element={ <Help /> } />
-                </Routes> 
-            </header>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={ <Home /> } />
+                <Route path="/typing-test" element={ <TypingTest /> } />
+                <Route path="/about" element={ <About /> } />
+                <Route path="/settings" element={ <Settings /> } />
+                <Route path="/help" element={ <Help /> } />
+                <Route path="/login" element={ <Login /> } />
+            </Routes> 
         </Router>
     )
 }

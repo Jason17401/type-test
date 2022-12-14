@@ -1,31 +1,30 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './Navbar.css';
 
 const tabs = [
     {name: 'Home', href: '/'},
     {name: 'Typing Test', href: '/typing-test'},
     {name: 'About', href: '/about'},
     {name: 'Settings', href: '/settings'},
-    {name: 'Help', href: '/help'}
-]
+    {name: 'Help', href: '/help'},
+];
+
+let isLoggedIn = false;
+var rightTab = (isLoggedIn ? {name: 'Profile', href: '/profile'} : {name: 'Login', href: '/login'});
 
 function Navbar() {
     return (
-        <nav>
-            <ul className="fullnavbar">
+        <div className="navigation">
+            <ul className="navbar">
                 {tabs.map((item) => (
-                    <NavLink
-                        key = { item.name }
-                        to = { item.href }
-                        className = {({isActive}) => {
-                            console.log(item.href + ' ' + isActive)
-                        }}
-                    >
-                        { item.name }
-                    </NavLink>
+                    <NavLink to = { item.href }>{ item.name }</NavLink>
                 ))}
+                <div className="navbar-right">
+                    <NavLink to = { rightTab.href }>{ rightTab.name }</NavLink>
+                </div>
             </ul>
-        </nav>
+        </div>
     )
 }
 
