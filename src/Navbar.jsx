@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Navbar.css';
+import './Styles/Navbar.css';
 
 const tabs = [
     {name: 'Home', href: '/'},
@@ -18,10 +18,10 @@ function Navbar() {
         <div className="navigation">
             <ul className="navbar">
                 {tabs.map((item) => (
-                    <NavLink to = { item.href }>{ item.name }</NavLink>
+                    <NavLink to={ item.href }>{ item.name }</NavLink>
                 ))}
                 <div className="navbar-right">
-                    <NavLink to = { rightTab.href }>{ rightTab.name }</NavLink>
+                    <NavLink to={ rightTab.href }>{ rightTab.name }</NavLink>
                 </div>
             </ul>
         </div>

@@ -1,12 +1,3 @@
-body {
-    margin: 0px;
-    background-color: #EDEDED;
-}
-
-h1 {
-    margin: 0px;
-}
-
 .navigation {
     background: #00C2FF;
     height: 55px;
@@ -17,7 +8,6 @@ h1 {
 .navbar {
     position: sticky;
     top: 0;
-    align-items: center;
     padding-inline-start: 0px;
     margin: 0px;
     height: 55px;

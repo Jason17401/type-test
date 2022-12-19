@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+    background-color: #EDEDED;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
