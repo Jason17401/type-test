@@ -1,0 +1,85 @@
+p {
+    font-size: 16px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-top: 1vh;
+}
+
+.pageBody {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.pageContent {
+    display: flex;
+    height: 100%;
+    width: 85vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin: 0 auto;
+}
+
+.contentList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: 85vw;
+    margin: 0 auto;
+    padding-inline-start: 0px;
+}
+
+.sideList {
+    flex-direction: row;
+}
+
+.sideList .container {
+    margin-bottom: 0px !important;
+}
+
+.sideList .container:not(:last-child) {
+    margin-right: 3vh;
+}
+
+.contentList .otherInfo {
+    margin-bottom: 3vh;
+}
+
+.contentList .title {
+    padding: 2.5vh 10vw;
+}
+
+.contentList .container {
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    align-items: center;
+    break-inside: avoid;
+}
+
+.contentList .container:not(:last-child) {
+    margin-bottom: 3vh;
+}
+
+.typeTestButton {
+    margin-top: 1vh;
+}
+
+.typeTestButton a {
+    display: block;
+    color: #343434;
+    background-color: #00CE00;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15.7px 1.5rem;
+    cursor: pointer;
+    float: right;
+    border-radius: 15px;
+}
+
+.typeTestButton a:hover:not(.active) {
+    background-color: #008B00;
+}

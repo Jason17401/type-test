@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Styles/Navbar.css';
 
 const tabs = [
-    {name: 'Home', href: '/'},
+    {name: 'Speedster', href: '/'},
     {name: 'Typing Test', href: '/typing-test'},
     {name: 'About', href: '/about'},
     {name: 'Settings', href: '/settings'},
