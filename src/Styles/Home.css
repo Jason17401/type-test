@@ -13,7 +13,7 @@ p {
 .pageContent {
     display: flex;
     height: 100%;
-    width: 85vw;
+    width: 65%;
     padding-top: 3vh;
     padding-bottom: 3vh;
     margin: 0 auto;
@@ -26,29 +26,37 @@ p {
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    width: 85vw;
+    width: 100%;
     margin: 0 auto;
     padding-inline-start: 0px;
 }
 
 .sideList {
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding-inline-start: 0px;
 }
 
 .sideList .container {
     margin-bottom: 0px !important;
 }
 
-.sideList .container:not(:last-child) {
-    margin-right: 3vh;
+.contentList li {
+    width: 100%;
 }
 
-.contentList .otherInfo {
-    margin-bottom: 3vh;
+.contentList .textContent {
+    padding: 2.5vh 2.5vw;
+    overflow: hidden;
 }
 
-.contentList .title {
-    padding: 2.5vh 10vw;
+.sideList .other {
+    padding: 2.5vh 2.5vw;
+    width: 41%;
 }
 
 .contentList .container {
@@ -59,7 +67,7 @@ p {
     break-inside: avoid;
 }
 
-.contentList .container:not(:last-child) {
+.contentList li:not(:last-child) {
     margin-bottom: 3vh;
 }
 

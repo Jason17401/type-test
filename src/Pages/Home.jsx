@@ -7,16 +7,17 @@ function Home() {
         <div class="pageBody">
             <div class="pageContent">
                 <ul class="contentList">
-                    <li class="title container">
-                        <h1>Welcome to Speedster</h1>
-                        <p>Improve your typing speed by practicing on our site!<br/>Create an account to keep track of your progress or start typing now!
-                        </p>
-                        <div class="typeTestButton">
-                            <Link to="/typing-test">Start Typing</Link>
+                    <li class="title">
+                        <div class="textContent container">
+                            <h1>Welcome to Speedster</h1>
+                            <p>Improve your typing speed by practicing on our site!<br/>Create an account to keep track of your progress or start typing now!</p>
+                            <div class="typeTestButton">
+                                <Link to="/typing-test">Start Typing</Link>
+                            </div>
                         </div>
                     </li>
                     <li class="otherInfo">
-                        <ul class="contentList sideList">
+                        <ul class="sideList">
                             <li class="other container">
                                 <h1>No Content 1</h1>
                                 <p>Dummy content.</p>
@@ -27,9 +28,11 @@ function Home() {
                             </li>
                         </ul>
                     </li>
-                    <li class="otherInfo2 container">
-                        <h1>Other Not Realised Info</h1>
-                        <p>Dummy content 3.</p>
+                    <li class="otherInfo2">
+                        <div class="textContent container">
+                            <h1>Other Not Realised Info</h1>
+                            <p>Dummy content 3.</p>
+                        </div>
                     </li>
                 </ul>
             </div>
