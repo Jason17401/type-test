@@ -1,0 +1,77 @@
+.pageBody {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.pageContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.pageView {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titleView {
+    flex: 0 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding: 1.25rem 7.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+.latestView {
+    flex: 0 1 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    width: 49%;
+    height: auto;
+    padding: 1.25rem 7.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+.typeTestButton {
+    margin-top: 1em;
+}
+
+.typeTestButton a {
+    display: block;
+    color: #343434;
+    background-color: #00CE00;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15.7px 1.5rem;
+    cursor: pointer;
+    float: right;
+    border-radius: 15px;
+}
+
+.typeTestButton a:hover:not(.active) {
+    background-color: #008B00;
+}
+
+p {
+    font-size: 16px;
+    margin-block-end: 0px;
+    margin-block-start: 0.5em;
+}
