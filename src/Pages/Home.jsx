@@ -7,7 +7,7 @@ function Home() {
         <div class="pageBody">
             <div class="pageContent">
                 <ul class="contentList">
-                    <li class="title">
+                    <li>
                         <div class="textContent container">
                             <h1>Welcome to Speedster</h1>
                             <p>Improve your typing speed by practicing on our site!<br/>Create an account to keep track of your progress or start typing now!</p>
@@ -16,7 +16,7 @@ function Home() {
                             </div>
                         </div>
                     </li>
-                    <li class="otherInfo">
+                    <li>
                         <ul class="sideList">
                             <li class="other container">
                                 <h1>No Content 1</h1>
@@ -28,7 +28,7 @@ function Home() {
                             </li>
                         </ul>
                     </li>
-                    <li class="otherInfo2">
+                    <li>
                         <div class="textContent container">
                             <h1>Other Not Realised Info</h1>
                             <p>Dummy content 3.</p>
