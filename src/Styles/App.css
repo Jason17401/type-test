@@ -4,6 +4,10 @@ body {
     font-family: monospace;
 }
 
+li {
+    list-style-type: none;
+}
+
 h1 {
     margin: 0px;
 }
