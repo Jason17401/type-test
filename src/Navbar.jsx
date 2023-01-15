@@ -6,8 +6,7 @@ const tabs = [
     {name: 'Speedster', href: '/'},
     {name: 'Typing Test', href: '/typing-test'},
     {name: 'About', href: '/about'},
-    {name: 'Settings', href: '/settings'},
-    {name: 'Help', href: '/help'},
+    {name: 'Settings', href: '/settings'}
 ];
 
 let isLoggedIn = false;
@@ -18,10 +17,10 @@ function Navbar() {
         <div className="navigation">
             <ul className="navbar">
                 {tabs.map((item) => (
-                    <NavLink to={ item.href }>{ item.name }</NavLink>
+                    <li key="{ item.name }"><NavLink to={ item.href }>{ item.name }</NavLink></li>
                 ))}
                 <div className="navbar-right">
-                    <NavLink to={ rightTab.href }>{ rightTab.name }</NavLink>
+                    <li key="{ rightTab.name }"><NavLink to={ rightTab.href }>{ rightTab.name }</NavLink></li>
                 </div>
             </ul>
         </div>
