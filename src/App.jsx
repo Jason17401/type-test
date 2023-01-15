@@ -16,7 +16,7 @@ import './Styles/App.css';
 
 function App() {
     return (
-        <div class="flex-wrapper">
+        <div className="flex-wrapper">
             <Navbar />
             <Routes>
                 <Route path="/" element={ <Home /> } />

@@ -9,27 +9,11 @@ import App from '../src/App';
 const app = express();
 const PORT = 8080;
 
-const router = express.Router();
+app.use('/static', express.static(path.join(__dirname, '../build/static')));
 
-router.use('^/$', (req, res, next) => {
-    const appContents = ReactDOMServer.renderToString(
-        <StaticRouter location={ req.url }>
-            <App />
-        </StaticRouter>
-    );
-
-    fs.readFile(path.resolve('./build/index.html'), 'utf8', (err, data) => {
-        if (err) {
-            console.log(err)
-            return res.status(500).send("An error has occurred");
-        }
-        return res.send(data.replace('<div id="root"></div>', `<div id="root">${ appContents }</div>`));
-    });
+app.get('*', (req, res) => {
+    res.sendFile('index.html', {root: path.join(__dirname, '../build/')});
 });
-
-router.use(express.static(path.resolve(__dirname, '..', 'build')));
-
-app.use(router);
 
 app.listen(PORT, () => {
     console.log(`App launched on ${PORT}`);
