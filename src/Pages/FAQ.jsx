@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/FAQ.css';
+import '../Styles/StandardPages.css';
 
 const questionSet = [
     {

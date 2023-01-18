@@ -1,10 +1,21 @@
 import React from 'react';
+import '../Styles/StandardPages.css';
 
 function TypingTest() {
     return (
-        <div>
-            <h1>Typing Test Page</h1>
-            <p>This is where you test your typing speed.</p>
+        <div className="pageBody">
+            <div className="pageContent">
+                <ul className="contentList">
+                    <li>
+                        <div className="textContent container">
+                            <h1>Standard Typing Test</h1>
+                        </div>
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }
