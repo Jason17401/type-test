@@ -7,6 +7,10 @@ p {
     white-space: pre-line;
 }
 
+mark {
+    background: #EDEDED;
+}
+
 .pageBody {
     margin: 0 auto;
     width: 100%;

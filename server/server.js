@@ -1,10 +1,5 @@
-import fs from 'fs';
 import path from 'path';
-import React from 'react';
-import ReactDOMServer from 'react-dom/server';
-import { StaticRouter } from 'react-router-dom/server';
 import express from 'express';
-import App from '../src/App';
 
 const app = express();
 const PORT = 8080;

@@ -1,10 +1,21 @@
 import React from 'react';
+import '../Styles/StandardPages.css';
 
 function Login() {
     return (
-        <div>
-            <h1>Login Page</h1>
-            <p>This is where you can log in to your account or sign up.</p>
+        <div className="pageBody">
+            <div className="pageContent">
+                <ul className="contentList">
+                    <li>
+                        <div className="textContent container">
+                            <h1>Login</h1>
+                        </div>
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }

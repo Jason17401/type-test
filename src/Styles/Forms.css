@@ -1,0 +1,65 @@
+label {
+    font-size: 16px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-top: 1vh;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form {
+    width: 60%;
+    margin: auto;
+}
+
+.formField {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+}
+
+.formField label {
+    margin-bottom: 1vh;
+}
+
+.formField input {
+    padding: 5px;
+}
+
+.formField .asterisk {
+    color: red;
+}
+
+.formField .errorMessage {
+    margin-top: 0.5vh;
+    color: red;
+    font-size: 11px;
+}
+
+form .message {
+    text-align: center;    
+}
+
+.formField button {
+    background-color: #008FFF;
+    color: #343434;
+    border-radius: 15px;
+    border-width: 0px;
+    padding: 15.7px 1.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    align-items: center;
+    cursor: pointer;
+}
+
+.formField button:hover:not(.active) {
+    background-color: #007DDC;
+}
+
+.css-13cymwt-control {
+    border-color: hsl(0, 0%, 40%) !important;
+}
