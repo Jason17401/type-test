@@ -9,10 +9,10 @@ const tabs = [
     {name: 'Settings', href: '/settings'}
 ];
 
-let isLoggedIn = false;
-var rightTab = (isLoggedIn ? {name: 'Profile', href: '/profile'} : {name: 'Login', href: '/login'});
-
 function Navbar() {
+    let isLoggedIn = false;
+    var rightTab = (isLoggedIn ? {name: 'Profile', href: '/profile'} : {name: 'Login', href: '/login'});
+
     return (
         <div className="navigation">
             <ul className="navbar">
