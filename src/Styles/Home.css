@@ -1,36 +1,3 @@
-p {
-    font-size: 16px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-top: 1vh;
-}
-
-.pageBody {
-    margin: 0 auto;
-    width: 100%;
-}
-
-.pageContent {
-    display: flex;
-    height: 100%;
-    width: 65%;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    margin: 0 auto;
-}
-
-.contentList {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    width: 100%;
-    margin: 0 auto;
-    padding-inline-start: 0px;
-}
-
 .sideList {
     display: flex;
     flex-direction: row;
@@ -45,30 +12,9 @@ p {
     margin-bottom: 0px !important;
 }
 
-.contentList li {
-    width: 100%;
-}
-
-.contentList .textContent {
-    padding: 2.5vh 2.5vw;
-    overflow: hidden;
-}
-
 .sideList .other {
     padding: 2.5vh 2.5vw;
     width: 41%;
-}
-
-.contentList .container {
-    background-color: #FFFFFF;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 15px;
-    align-items: center;
-    break-inside: avoid;
-}
-
-.contentList li:not(:last-child) {
-    margin-bottom: 3vh;
 }
 
 .typeTestButton {

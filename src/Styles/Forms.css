@@ -1,21 +1,14 @@
-label {
-    font-size: 16px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-top: 1vh;
-}
-
 textarea {
     resize: vertical;
     min-height: 100px;
 }
 
-.form {
+.contactForm {
     width: 60%;
     margin: auto;
 }
 
-.formField {
+.contactForm .formField {
     display: flex;
     flex-direction: column;
     margin-top: 1vh;
@@ -62,4 +55,6 @@ form .message {
 
 .css-13cymwt-control {
     border-color: hsl(0, 0%, 40%) !important;
+    border-radius: 2px !important;
+    cursor: pointer !important;
 }

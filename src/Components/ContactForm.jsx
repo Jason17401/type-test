@@ -28,8 +28,8 @@ function ContactForm() {
     };
 
     return (
-        <div className="form">
-            <form onSubmit={ handleSubmit(onSubmit) }>
+        <div className="contactForm">
+            <form onSubmit={ handleSubmit(onSubmit) } key={ 1 }>
                 <div className="formField">
                     <label>Your Name (The name you wish we address you with)</label>
                     <input
