@@ -14,18 +14,11 @@ const languages = [
 function GeneralSettings() {
     const {
         control: control2,
-        handleSubmit: handleSubmit2,
-        setValue: setValue2
+        handleSubmit: handleSubmit2
     } = useForm();
 
     const onSubmit2 = (data) => {
         console.log(data.language);
-    };
-
-    const handleChange2 = (change) => {
-        setValue2("language", change, {
-            shouldDirty: true
-        });
     };
 
     return (
@@ -38,7 +31,6 @@ function GeneralSettings() {
                         <Controller
                             name="language"
                             control={control2}
-                            defaultValue={ languages[0] }
                             render={({ field }) => (
                                 <div style={{ width: "200px" }}>
                                     <Select
@@ -46,7 +38,6 @@ function GeneralSettings() {
                                         defaultValue={ languages[0] }
                                         options={languages}
                                         menuPortalTarget={document.body}
-                                        onChange={ handleChange2 }
                                     />
                                 </div>
                             )}
