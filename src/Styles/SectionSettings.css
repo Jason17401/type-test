@@ -1,0 +1,91 @@
+.sectionSettings {
+    width: 100%;
+}
+
+.sectionSettings span {
+    font-size: 16px;
+}
+
+.sectionSettings .formField {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionSettings .formField label {
+    margin-bottom: 0px;
+}
+
+.sectionSettings .formField p {
+    margin-bottom: 0px;
+}
+
+.sectionSettings .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionSettings .info .desc {
+    width: 60%;
+}
+
+.sectionSettings .formField:not(:last-child) {
+    margin-bottom: 2vh;
+}
+
+.sectionSettings .formField .radioButton {
+    display: inline-block;
+    position: relative;
+    margin-top: 0px;
+    padding-left: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.sectionSettings .formField .radioButton:not(:last-child) {
+    margin-right: 40px;
+}
+
+.sectionSettings .formField .radioButton input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.sectionSettings .formField .radioButton .radioButtonBackground {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #EDEDED;
+    border-radius: 50%;
+}
+
+.sectionSettings .formField .radioButton:hover input ~ .radioButtonBackground {
+    background-color: #CDCDCD;
+}
+
+.sectionSettings .formField .radioButton input:checked ~ .radioButtonBackground {
+    background-color: #00C2FF;
+}
+
+.sectionSettings .formField .radioButton .radioButtonBackground:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.sectionSettings .formField .radioButton input:checked ~ .radioButtonBackground:after {
+    display: block;
+}
+
+.sectionSettings .formField .radioButton .radioButtonBackground:after {
+    border-radius: 50%;
+    background: #FFFFFF;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+}
