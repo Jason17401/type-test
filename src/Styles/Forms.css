@@ -37,7 +37,7 @@ form .message {
 }
 
 .contactForm .formField button {
-    background-color: #008FFF;
+    background-color: #00CE00;
     color: #343434;
     border-radius: 15px;
     border-width: 0px;
@@ -50,7 +50,7 @@ form .message {
 }
 
 .contactForm .formField button:hover:not(.active) {
-    background-color: #007DDC;
+    background-color: #008B00;
 }
 
 .css-13cymwt-control {

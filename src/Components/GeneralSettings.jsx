@@ -46,7 +46,10 @@ function GeneralSettings() {
                                         value={ selectedLanguage }
                                         options={ languages }
                                         menuPortalTarget={ document.body }
-                                        onChange={ handleChangeLanguage }
+                                        onChange={(event) => {
+                                            field.onChange(event);
+                                            handleChangeLanguage(event);
+                                        }}
                                     />
                                 </div>
                             )}

@@ -15,6 +15,14 @@
     margin-bottom: 0px;
 }
 
+.sectionSettings .formField .noTopMargin {
+    margin-top: 0px;
+}
+
+.sectionSettings .noBottomMargin {
+    margin-bottom: 0px !important;
+}
+
 .sectionSettings .formField p {
     margin-bottom: 0px;
 }
@@ -24,6 +32,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.sectionSettings .columnTwo {
+    justify-content: space-around !important;
 }
 
 .sectionSettings .info .desc {
