@@ -7,6 +7,7 @@ import TypingTest from './Pages/TypingTest';
 import About from './Pages/About';
 import Settings from './Pages/Settings';
 import Login from './Pages/Login';
+import Profile from './Pages/Profile';
 import Contact from './Pages/Contact';
 import FAQ from './Pages/FAQ';
 import Socials from './Pages/Socials';
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/about" element={ <About /> } />
                 <Route path="/settings" element={ <Settings /> } />
                 <Route path="/login" element={ <Login /> } />
+                <Route path="/profile" element={ <Profile />} />
                 <Route path="/contact" element={ <Contact /> } />
                 <Route path="/faq" element={ <FAQ /> } />
                 <Route path="/socials" element={ <Socials /> } />

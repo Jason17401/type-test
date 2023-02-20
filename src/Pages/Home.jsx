@@ -1,27 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { onAuthStateChanged } from 'firebase/auth';
-import { signOut } from "firebase/auth";
-import { auth } from '../firebase';
 import '../Styles/StandardPages.css';
 import '../Styles/Home.css';
 
 function Home() {
-    useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
-            if (user) {
-                const uid = user.uid;
-                console.log("uid: ", uid);
-            };
-        });
-    }, []);
-
-    const handleLogout = () => {
-        signOut(auth).then(() => {
-            console.log("Signed out")
-        });
-    }
-
     return (
         <div className="pageBody">
             <div className="pageContent">
@@ -42,10 +24,8 @@ function Home() {
                                 <p>Dummy content.</p>
                             </li>
                             <li className="other container">
-                                <h1>Temporary log out</h1>
-                                <button onClick={handleLogout}>
-                                    Logout
-                                </button>
+                                <h1>No Content 2</h1>
+                                <p>Dummy content.</p>
                             </li>
                         </ul>
                     </li>

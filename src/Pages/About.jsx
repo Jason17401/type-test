@@ -3,11 +3,11 @@ import '../Styles/StandardPages.css';
 
 function About() {
     return (
-        <div class="pageBody">
-            <div class="pageContent">
-                <ul class="contentList">
+        <div className="pageBody">
+            <div className="pageContent">
+                <ul className="contentList">
                     <li>
-                        <div class="textContent container">
+                        <div className="textContent container">
                             <h1>About</h1>
                             <p>Speedster is an online typing test website featuring new and unique services. This site also offers many test modes, various configurable visual and functional settings, and a user profile system to store past tests.</p>
                             <h2>History</h2>

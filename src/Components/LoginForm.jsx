@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebase';
+import { auth, signInWithGoogle } from '../firebase';
 import { useNavigate } from 'react-router-dom';
 
 function LoginForm() {
@@ -24,34 +24,39 @@ function LoginForm() {
     };
 
     return (
-        <div className="contactForm">
-            <form>
-                <div className="formField">
-                    <label>Email address</label>
-                    <input
-                        type="email"
-                        value={email}
-                        onChange={(event) => setEmail(event.target.value)}
-                        required
-                        placeholder="Email address"
-                    />
-                </div>
-                <div className="formField">
-                    <label>Password</label>
-                    <input
-                        type="password"
-                        value={password}
-                        onChange={(event) => setPassword(event.target.value)}
-                        required
-                        placeholder="Password"
-                    />
-                </div>
-                <div className="formField">
-                    <label></label>
-                    <button type="submit" onClick={onSubmit}>Login</button>
-                </div>
-            </form>
-        </div>
+        <>
+            <div className="contactForm">
+                <form>
+                    <div className="formField">
+                        <label>Email address</label>
+                        <input
+                            type="email"
+                            value={email}
+                            onChange={(event) => setEmail(event.target.value)}
+                            required
+                            placeholder="Email address"
+                        />
+                    </div>
+                    <div className="formField">
+                        <label>Password</label>
+                        <input
+                            type="password"
+                            value={password}
+                            onChange={(event) => setPassword(event.target.value)}
+                            required
+                            placeholder="Password"
+                        />
+                    </div>
+                    <div className="formField">
+                        <label></label>
+                        <button type="submit" onClick={onSubmit}>Login</button>
+                    </div>
+                </form>
+            </div>
+            <div className="alternativeLogIn">
+                <button onClick={signInWithGoogle}>Log in with Google</button>
+            </div>
+        </>
     );
 }
 
