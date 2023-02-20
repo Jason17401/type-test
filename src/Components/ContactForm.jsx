@@ -3,14 +3,14 @@ import { useForm, Controller } from 'react-hook-form';
 import Select from 'react-select';
 import '../Styles/Forms.css';
 
-const categories = [
-    {value: "Query", label: "Query"},
-    {value: "Feedback", label: "Feedback"},
-    {value: "Bug report", label: "Bug report"},
-    {value: "Other", label: "Other"}
-];
-
 function ContactForm() {
+    const categories = [
+        {value: "Query", label: "Query"},
+        {value: "Feedback", label: "Feedback"},
+        {value: "Bug report", label: "Bug report"},
+        {value: "Other", label: "Other"}
+    ];
+
     const [submitMessage, setSubmitMessage] = useState();
 
     const {
@@ -28,8 +28,8 @@ function ContactForm() {
     };
 
     return (
-        <div className="form">
-            <form onSubmit={ handleSubmit(onSubmit) }>
+        <div className="contactForm">
+            <form onSubmit={ handleSubmit(onSubmit) } key={ 1 }>
                 <div className="formField">
                     <label>Your Name (The name you wish we address you with)</label>
                     <input

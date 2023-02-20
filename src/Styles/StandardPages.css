@@ -57,3 +57,20 @@ mark {
 .contentList li:not(:last-child) {
     margin-bottom: 3vh;
 }
+
+.accountFunctions {
+    display: flex;
+    flex-direction: row;
+}
+
+.accountFunctions button {
+    background-color: inherit;
+    color: #EDEDED;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: monospace;
+}
+.accountFunctions .active {
+    color: #343434;
+}

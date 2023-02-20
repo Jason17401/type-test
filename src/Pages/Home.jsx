@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import '../Styles/StandardPages.css';
 import '../Styles/Home.css';
 
 function Home() {
@@ -24,7 +25,7 @@ function Home() {
                             </li>
                             <li className="other container">
                                 <h1>No Content 2</h1>
-                                <p>Dummy content 2.</p>
+                                <p>Dummy content.</p>
                             </li>
                         </ul>
                     </li>

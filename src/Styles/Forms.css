@@ -1,21 +1,14 @@
-label {
-    font-size: 16px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-top: 1vh;
-}
-
 textarea {
     resize: vertical;
     min-height: 100px;
 }
 
-.form {
+.contactForm {
     width: 60%;
     margin: auto;
 }
 
-.formField {
+.contactForm .formField {
     display: flex;
     flex-direction: column;
     margin-top: 1vh;
@@ -43,8 +36,8 @@ form .message {
     text-align: center;    
 }
 
-.formField button {
-    background-color: #008FFF;
+.contactForm .formField button {
+    background-color: #00CE00;
     color: #343434;
     border-radius: 15px;
     border-width: 0px;
@@ -56,10 +49,12 @@ form .message {
     cursor: pointer;
 }
 
-.formField button:hover:not(.active) {
-    background-color: #007DDC;
+.contactForm .formField button:hover:not(.active) {
+    background-color: #008B00;
 }
 
 .css-13cymwt-control {
     border-color: hsl(0, 0%, 40%) !important;
+    border-radius: 2px !important;
+    cursor: pointer !important;
 }

@@ -15,7 +15,7 @@ function Footer() {
         <div className="footer">
             <ul className="botnav">
                 {tabs.map((item) => (
-                    <li key="{ item.name }"><NavLink to={ item.href }>{ item.name }</NavLink></li>
+                    <li key={ item.name }><NavLink to={ item.href }>{ item.name }</NavLink></li>
                 ))}
             </ul>
         </div>

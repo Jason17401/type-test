@@ -1,32 +1,29 @@
-li {
+.settingsList li {
     display: inline;
 }
 
-.footer {
-    background: #00A6DB;
-    margin-top: auto;
+.rowLinks {
+    margin-top: 2vh;
     height: 40px;
     overflow: hidden;
 }
 
-.botnav {
+.settingsList {
     padding-inline-start: 0px;
     margin: 0px;
-    height: 40px;
     text-align: center;
-
 }
 
-.botnav a {
+.settingsList a {
     display: inline-block;
     color: #343434;
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
-    padding: 12px 2vw;
+    font-size: 16px;
+    padding: 12px 1vw;
     cursor: pointer;
 }
 
-.botnav a:hover:not(.active) {
+.settingsList a:hover:not(.active) {
     color: #EDEDED;
 }

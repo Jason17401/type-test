@@ -1,3 +1,7 @@
+html {  
+    scroll-behavior: smooth;  
+}
+
 body {
     margin: 0px;
     background-color: #EDEDED;
@@ -6,6 +10,13 @@ body {
 
 li {
     list-style-type: none;
+}
+
+label {
+    font-size: 16px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-top: 1vh;
 }
 
 h1 {
